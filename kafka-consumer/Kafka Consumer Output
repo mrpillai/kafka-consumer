@@ -1,0 +1,194 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-07-28 19:07:13.145  INFO 21612 --- [           main] c.m.k.k.KafkaConsumerApplication         : Starting KafkaConsumerApplication on Mridu with PID 21612 (C:\Project_Codebase\kafka-consumer\kafka-consumer\target\classes started by mrpillai in C:\Project_Codebase\kafka-consumer\kafka-consumer)
+2020-07-28 19:07:13.151  INFO 21612 --- [           main] c.m.k.k.KafkaConsumerApplication         : No active profile set, falling back to default profiles: default
+2020-07-28 19:07:16.614  INFO 21612 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2020-07-28 19:07:16.639  INFO 21612 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-28 19:07:16.640  INFO 21612 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-28 19:07:16.843  INFO 21612 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-28 19:07:16.843  INFO 21612 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3574 ms
+2020-07-28 19:07:17.617  INFO 21612 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-28 19:07:18.530  INFO 21612 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [169.254.173.134:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2020-07-28 19:07:18.941  INFO 21612 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-07-28 19:07:18.945  INFO 21612 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-07-28 19:07:18.946  INFO 21612 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1595943438935
+2020-07-28 19:07:18.953  INFO 21612 --- [           main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): test
+2020-07-28 19:07:18.959  INFO 21612 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-07-28 19:07:18.975  INFO 21612 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [169.254.173.134:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_json
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2020-07-28 19:07:19.038  INFO 21612 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.5.0
+2020-07-28 19:07:19.038  INFO 21612 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 66563e712b0b9f84
+2020-07-28 19:07:19.040  INFO 21612 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1595943439038
+2020-07-28 19:07:19.041  INFO 21612 --- [           main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-group_json-2, groupId=group_json] Subscribed to topic(s): Kafka_Example_json
+2020-07-28 19:07:19.043  INFO 21612 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-07-28 19:07:19.120  INFO 21612 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2020-07-28 19:07:19.166  INFO 21612 --- [           main] c.m.k.k.KafkaConsumerApplication         : Started KafkaConsumerApplication in 7.0 seconds (JVM running for 7.9)
+2020-07-28 19:07:20.180  INFO 21612 --- [ntainer#1-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_json-2, groupId=group_json] Cluster ID: FMA4T5RLSoeyw5g1qTLMzg
+2020-07-28 19:07:20.183  INFO 21612 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_json-2, groupId=group_json] Discovered group coordinator Mridu:9092 (id: 2147483647 rack: null)
+2020-07-28 19:07:20.197  INFO 21612 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_json-2, groupId=group_json] (Re-)joining group
+2020-07-28 19:07:20.197  INFO 21612 --- [ntainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: FMA4T5RLSoeyw5g1qTLMzg
+2020-07-28 19:07:20.199  INFO 21612 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator Mridu:9092 (id: 2147483647 rack: null)
+2020-07-28 19:07:20.204  INFO 21612 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2020-07-28 19:07:20.232  INFO 21612 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_json-2, groupId=group_json] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-07-28 19:07:20.233  INFO 21612 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_json-2, groupId=group_json] (Re-)joining group
+2020-07-28 19:07:20.237  INFO 21612 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+2020-07-28 19:07:20.237  INFO 21612 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+2020-07-28 19:07:20.259  INFO 21612 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_json-2, groupId=group_json] Finished assignment for group at generation 14: {consumer-group_json-2-d5388ae7-29c6-4605-98a5-431debac740c=Assignment(partitions=[Kafka_Example_json-0])}
+2020-07-28 19:07:20.259  INFO 21612 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 14: {consumer-group_id-1-f2be03f3-f434-4ada-8341-a479ee5b5551=Assignment(partitions=[test-0])}
+2020-07-28 19:07:20.273  INFO 21612 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_json-2, groupId=group_json] Successfully joined group with generation 14
+2020-07-28 19:07:20.274  INFO 21612 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation 14
+2020-07-28 19:07:20.282  INFO 21612 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_json-2, groupId=group_json] Adding newly assigned partitions: Kafka_Example_json-0
+2020-07-28 19:07:20.282  INFO 21612 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: test-0
+2020-07-28 19:07:20.308  INFO 21612 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition test-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[Mridu:9092 (id: 0 rack: null)], epoch=0}}
+2020-07-28 19:07:20.308  INFO 21612 --- [ntainer#1-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-group_json-2, groupId=group_json] Setting offset for partition Kafka_Example_json-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[Mridu:9092 (id: 0 rack: null)], epoch=0}}
+2020-07-28 19:07:20.310  INFO 21612 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [test-0]
+2020-07-28 19:07:20.310  INFO 21612 --- [ntainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_json: partitions assigned: [Kafka_Example_json-0]
+Consumed JSON Message: User{name='mridu', dept='Tech'}
